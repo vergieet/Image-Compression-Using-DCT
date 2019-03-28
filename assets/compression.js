@@ -1,6 +1,6 @@
 var img = new Image();
 img.crossOrigin = "Anonymous";
-img.src = 'sample.jpg';
+img.src = '/assets/sample.jpg';
 
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
