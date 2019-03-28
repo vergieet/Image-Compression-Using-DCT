@@ -1,12 +1,13 @@
-const express = require('express')
-const fs = require('fs')
-const app = express()
+// server.js
 
-app.get('/', function (req, res) {
-  res.render("hai")
-})
+const express = require('express');
+const app = express();
+const path = require('path');
 
-app.listen(80, function () {
-  console.log('Example app listening on port 3000!')
-})
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
+});

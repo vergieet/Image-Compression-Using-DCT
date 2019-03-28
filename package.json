@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vergieet/Image-Compression-Using-DCT#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
   }
 }
